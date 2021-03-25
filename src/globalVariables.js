@@ -1,0 +1,2 @@
+// I use this to add to this.props.match.url when comparing to window.location.pathname because where I have it deployed it's in a subfolder. If your app is in the main public folder on the server then no need to use it, same thing applies if in development mode. 
+export const subfolder = ""

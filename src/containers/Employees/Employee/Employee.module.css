@@ -1,0 +1,68 @@
+.Employee{
+  width: 70%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding:1% 2%;
+  min-height: calc(100vh - 56px);
+}
+
+.Employee p{
+  font-size: 22px;
+}
+
+.NoList {
+  width:100%;
+}
+
+.BasicInfo {
+  display:flex;
+  flex-direction: column;
+}
+
+.IndInfo {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.Prefs{
+  display:flex;
+  align-items: center;
+  margin:22px 0;
+  text-align: left;
+  font-size:22px;
+}
+
+.Pref{
+  text-align: left;
+  margin-left:10px;
+  margin-top:5px;
+}
+
+@media(max-width:500px){
+  .Employee{
+    width:100%;
+  }
+}
+
+@media(max-width:900px){
+  .Employee{
+    text-align: center;
+  }
+}
+
+@media(max-width:600px){
+  .Prefs  button{
+    margin:15px 10px;
+  }
+
+  .Prefs div{
+    margin:4px 0;
+    display: inline;
+  }
+
+  .Prefs{
+    flex-direction: column;
+    margin: 5px 0;
+  }
+}

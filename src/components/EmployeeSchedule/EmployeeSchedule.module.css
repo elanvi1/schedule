@@ -1,0 +1,67 @@
+.Container{
+  display:grid;
+  grid-template-columns: repeat(7,minmax(120px,1fr));
+  grid-template-rows:repeat(1, minmax(1fr,50px)) repeat(6, minmax(75px,1fr)) ;
+  grid-gap: 1rem;
+  overflow: auto;
+  z-index: 1;
+}
+
+.Header {
+  color:rgb(131, 143, 119);
+  font-weight: bold;
+  text-align: center;
+  padding:5px;
+  box-sizing: border-box;
+  font-size: 22px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.Inactive {
+  padding:5px;
+  color:black;
+  background-color: grey;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  box-shadow: 8px 10px 20px #888888;
+  min-height: 75px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Weekends{
+  background-color: salmon;
+  padding:5px;
+  box-sizing: border-box;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  box-shadow: 8px 10px 20px #888888;
+  min-height: 75px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MinDay{
+  padding:5px;
+  color:black;
+  background-color: rgb(222, 235, 213);
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  box-shadow: 8px 10px 20px #888888;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media(min-width:1000px) {
+  .Container{
+    overflow: visible;
+  }
+}

@@ -1,0 +1,37 @@
+.Account{
+  margin: 0px;
+  padding:1% 2%;
+  min-height: calc(100vh - 56px);
+  display:flex;
+  flex-direction: column;
+}
+
+.ItemChange{
+  display:flex;
+  align-items: center;
+  margin: 22px 0;
+  font-size: 22px;
+}
+
+.Preference{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pref{
+  text-align: left;
+  margin-left:10px;
+  margin-top:7px;
+}
+
+@media(max-width:600px){
+  .ItemChange{
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .ItemChange button{
+    margin:10px 10px;
+  }
+}

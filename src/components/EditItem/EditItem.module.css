@@ -1,0 +1,30 @@
+.CanEdit{
+  display:flex;
+  align-items: center;
+  margin:22px 0;
+  flex-wrap: wrap;
+}
+
+.CanEdit div {
+  font-size:22px;
+  display:inline;
+  padding:0;
+  text-align: center;
+}
+
+@media(max-width:600px){
+  .CanEdit div button{
+    margin:auto 10px;
+  }
+
+  .CanEdit div{
+    margin:4px 0;
+    display: inline;
+  }
+
+  .CanEdit{
+    flex-direction: column;
+    margin: 5px 0;
+  }
+}
+

@@ -1,0 +1,67 @@
+.Item{
+  padding:5px;
+  z-index: 1;
+  height: 420px;
+  align-self: center;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  background-color: lightblue;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.ItemNoExp{
+  width:60%;
+}
+
+.MinDay{
+  padding:5px;
+  color:black;
+  background-color: rgb(222, 235, 213);
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  box-shadow: 8px 10px 20px #888888;
+  border: 1px solid rgb(222, 235, 213);
+}
+
+.Name {
+  margin: 5px 5%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Name:hover{
+  background-color: rgb(188, 206, 154);
+}
+
+.Plus{
+  color:green;
+  cursor: pointer;
+  border-radius: 50%;
+  align-self: right;
+}
+
+.Minus{
+  color:salmon;
+  cursor: pointer;
+  border-radius: 50%;
+  align-self: right;
+}
+
+@media (max-width:600px){
+  .ItemNoExp{
+    width: 89%;
+  }
+}
+
+@media (max-height:600px){
+  .ItemNoExp{
+    overflow-y: auto;
+  }
+}

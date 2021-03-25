@@ -1,0 +1,73 @@
+.Container{
+  display:grid;
+  grid-template-columns: repeat(7,minmax(120px,1fr));
+  grid-template-rows: repeat(7, 1fr) ;
+  grid-gap: 1rem;
+  overflow: auto;
+  z-index: 1;
+}
+
+.ContainerExp{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(220px,1fr));
+  grid-template-rows:repeat(1, 50px) repeat(6, minmax(420px,1fr));
+  grid-gap: 1rem;
+  overflow: auto;
+  z-index: 1;
+}
+
+.Header {
+  color:rgb(131, 143, 119);
+  font-weight: bold;
+  text-align: center;
+  padding:5px;
+  box-sizing: border-box;
+  font-size: 22px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.Inactive {
+  padding:5px;
+  color:black;
+  background-color: grey;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: no-drop;
+  box-shadow: 8px 10px 20px #888888;
+}
+
+.InactiveExp{
+  color:black;
+  background-color: grey;
+  text-align: center;
+  align-self: center;
+  min-height: 420px;
+}
+
+.Weekends{
+  background-color: salmon;
+  padding:5px;
+  box-sizing: border-box;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: no-drop;
+  box-shadow: 8px 10px 20px #888888;
+}
+
+.WeekendsExp{
+  background-color: salmon;
+  padding:5px;
+  box-sizing: border-box;
+  text-align: center;
+  align-self: center;
+  min-height: 420px;
+}
+
+@media(min-width:1000px) {
+  .Container{
+    overflow: visible;
+  }
+}
+

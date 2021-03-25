@@ -1,0 +1,18 @@
+.Content {
+  margin-top: 56px;
+  background:linear-gradient(to bottom,rgba(171, 224, 238,0.3) ,rgba(158, 164, 241,0.3),rgba(145, 151, 236,0.3),rgba(107, 115, 236,0.3));
+  /* height:calc(100vh - 56px); */
+}
+
+
+/* @media(max-height:900px){
+  .Content{
+    height:calc(100vh - 56px);
+  }
+}
+
+@media (max-height:500px){
+  .Content{
+    height:auto;
+  }
+} */

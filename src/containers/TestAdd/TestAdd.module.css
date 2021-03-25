@@ -1,0 +1,44 @@
+.AddEmployee{
+  margin: 20px auto;
+  text-align:center;
+  padding: 1% 2%;
+  box-sizing: border-box;
+  position: relative;
+  background-color: inherit;
+  min-height: calc(100vh - 56px);
+}
+
+.AddEmployee .Form{
+  width: 30%;
+  background-color: inherit;
+  border-bottom: 2px solid rgba(88, 64, 131,0.5);
+  border-right: 2px solid rgba(88, 64, 131,0.5);
+  border-left: 2px solid rgba(88, 64, 131,0.5);
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 5px 10px 15px 10px rgba(88, 64, 131,0.5);
+}
+
+@media (max-width: 900px){
+  .AddEmployee .Form{
+    width:100%;
+    top:0;
+    left:0;
+    transform: translateY(0) translateX(0);
+    border:none;
+    box-shadow:none;
+    position: initial;
+  }
+
+  .AddEmployee{
+    height:auto;
+    position: initial;
+  }
+}
+
+
+
+
+

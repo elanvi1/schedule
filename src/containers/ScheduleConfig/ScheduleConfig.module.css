@@ -1,0 +1,31 @@
+.ScheduleConfig{
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 56px);
+  padding: 0 2%;
+}
+
+.AlocAndTemps{
+  margin-top: 22px;
+  font-size: 22px;
+}
+
+.AlocAndTemps div{
+  display:inline-block;
+}
+
+.AlocAndTemps button{
+  margin:auto 10px;
+}
+
+@media(max-width:600px){
+  .AlocAndTemps{
+    text-align: center;
+  }
+  .AlocAndTemps div{
+    display: block;
+  }
+  .AlocAndTemps button{
+    margin:15px 10px;
+  }
+}

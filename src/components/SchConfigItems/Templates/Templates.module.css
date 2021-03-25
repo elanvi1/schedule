@@ -1,0 +1,36 @@
+.Template{
+  display:flex;
+  margin:22px 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Title {
+  font-size:22px;
+  display:flex;
+  text-align: center;
+  align-self: center;
+}
+
+.List {
+  display:flex;
+  flex-flow: wrap;
+}
+
+
+
+@media(max-width:600px){
+  .Title button{
+    margin:auto 10px;
+  }
+
+  .Title{
+    margin:4px 0;
+    align-self: center;
+  }
+
+  .Template{
+    margin: 5px 0;
+  }
+}

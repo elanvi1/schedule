@@ -1,0 +1,110 @@
+.Item{
+  padding:5px;
+  min-height: 420px;
+  align-self: center;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  background-color: lightblue;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ItemNoExp{
+  width:60%;
+}
+
+.MinDay{
+  padding:5px;
+  color:black;
+  background-color: rgb(222, 235, 213);
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  box-shadow: 8px 10px 20px #888888;
+}
+
+
+.PlusIcon,
+.GetIcon,
+.SaveIcon,
+.MinusIcon{
+  cursor: pointer;
+  position: relative;
+}
+
+.PlusIcon{
+  color:green;
+}
+
+.MinusIcon{
+  color:salmon;
+}
+
+.Invalid{
+  color: #ccc;
+  cursor:not-allowed;
+  background-color: grey;
+  position:relative;
+}
+
+.PlusTT,
+.GetTT,
+.SaveTT,
+.MinusTT{
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  font-size:12px;
+  transition: opacity 0.3s;
+}
+
+.PlusTT::after, 
+.GetTT::after,
+.SaveTT::after,
+.MinusTT::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.PlusIcon:hover .PlusTT,
+.GetIcon:hover .GetTT,
+.SaveIcon:hover .SaveTT,
+.MinusIcon:hover .MinusTT,
+.Invalid:hover .GetTT,
+.Invalid:hover .PlusTT,
+.Invalid:hover .SaveTT,
+.Invalid:hover .MinusTT{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width:600px){
+  .ItemNoExp{
+    width: 89%;
+  }
+}
+
+@media (max-height:600px){
+  .ItemNoExp{
+    overflow-y: auto;
+  }
+}
+

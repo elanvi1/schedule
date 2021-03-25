@@ -1,0 +1,67 @@
+.Item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid purple;
+  margin: 10px 15px;
+  width: 200px;
+  justify-content: space-between;
+  border-radius: 20%;
+  padding:10px;
+}
+
+.PlusIcon,
+.MinusIcon{
+  cursor: pointer;
+  position: relative;
+}
+
+.PlusIcon{
+  color:green;
+}
+
+.MinusIcon{
+  color:salmon;
+}
+
+.Invalid{
+  color: #ccc;
+  cursor:not-allowed;
+  background-color: grey;
+}
+
+.PlusTT,
+.MinusTT{
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  font-size:12px;
+  transition: opacity 0.3s;
+}
+
+.PlusTT::after, 
+.Minus::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.PlusIcon:hover .PlusTT,
+.MinusIcon:hover .MinusTT{
+  visibility: visible;
+  opacity: 1;
+}

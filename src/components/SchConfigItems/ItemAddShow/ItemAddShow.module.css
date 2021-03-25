@@ -1,0 +1,32 @@
+.Items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Show{
+  display:flex;
+  align-items: center;
+}
+
+.Show button{
+  margin:auto 0;
+  padding:4px;
+  box-sizing: border-box;
+}
+
+.Items p{
+  display:flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.Items p button{
+  margin-left: 10px;
+}
+
+@media(max-width:600px){
+  .Items p{
+    justify-content: center;
+  }
+}

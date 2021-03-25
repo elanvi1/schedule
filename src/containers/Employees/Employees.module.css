@@ -1,0 +1,85 @@
+.Employees{
+  /* background:linear-gradient(to bottom,rgba(171, 224, 238,0.3) ,rgba(158, 164, 241,0.3),rgba(145, 151, 236,0.3),rgba(107, 115, 236,0.3)); */
+  display:flex;
+  min-height:calc(100vh - 56px);
+  align-items: flex-start;
+}
+
+.EmployeesList{
+  width:30%;
+  height: calc(100vh - 56px);
+  padding:1%;
+  margin: auto 0px ;
+  text-align: center;
+  background: linear-gradient(to bottom,rgba(171, 224, 238,0.3) ,rgba(158, 164, 241,0.3),rgba(145, 151, 236,0.3),rgba(107, 115, 236,0.3));
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+
+.EmployeesList a{
+  text-decoration: none;
+  color:black;
+  margin:5px 10px;
+  font-weight: 700;
+  padding: 20px 0;
+  border: 1px solid lightblue;
+  box-shadow: 5px 4px 5px;
+  
+}
+
+.EmployeesList a:hover,
+.EmployeesList a:active,
+.EmployeesList a.active{
+  font-size: 22px;
+  background-color: lightblue;
+}
+
+.Search{
+  height:40px;
+  margin:15px 0;
+  padding:0;
+  display:flex;
+}
+
+.Search input{
+  height:100%;
+  width:100%;
+  border: 0px solid lightblue;
+  margin:0;
+  padding:0;
+  font-size:20px;
+  cursor:text;
+  vertical-align: center;
+}
+
+.Search input:focus{
+  border: 1px solid lightblue;
+  margin:0;
+  padding:0;
+}
+
+
+@media (max-width:500px){
+  .EmployeesList{
+    width:100%;
+  }
+  .NoShow{
+    display:none;
+  }
+}
+
+@media (max-height:500px){
+  .EmployeesList{
+    height:100%;
+    min-height: calc(150vh - 56px);
+    max-height: 150vh;
+    margin:0;
+  }
+}
+

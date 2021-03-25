@@ -1,0 +1,66 @@
+.Modal {
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 20%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  background: linear-gradient(to bottom,rgba(171, 224, 238) ,rgba(158, 164, 241),rgba(145, 151, 236),rgba(107, 115, 236));
+  padding-bottom: 15px;
+  max-height: 85vh;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.Wider{
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 71%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 20%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  background: linear-gradient(to bottom,rgba(171, 224, 238) ,rgba(158, 164, 241),rgba(145, 151, 236),rgba(107, 115, 236));
+  padding-bottom: 15px;
+  max-height: 75vh;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+@media (min-width: 600px) {
+  .Modal {
+      width: 500px;
+      left: calc(50% - 250px);
+  }
+}
+
+.Modal button{
+  border-radius: 0;
+  padding:5px;
+  margin-top:5%;
+}
+
+@media(max-width:900px){
+  .Modal,.Wider{
+    top:10%;
+    width: 80%;
+    left: 10%;
+    max-height: 85vh;
+  }
+}
+

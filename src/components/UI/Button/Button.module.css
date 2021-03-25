@@ -1,0 +1,65 @@
+.Button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+
+.Button:disabled {
+  color: #ccc;
+  cursor:not-allowed;
+  background-color: grey;
+}
+
+.Success {
+  background-color: #5C9210;
+}
+
+.Primary {
+  background-color: rgb(24, 81, 100);
+}
+
+.Danger {
+  background-color: #944317;
+}
+
+.LightGreen{
+  background-color: lightgreen;
+}
+
+.NoShow{
+  display:none;
+}
+
+.Small {
+  padding:3px;
+  margin:auto 0px;
+  margin-left: 4px;
+  font-size: 14px;
+  border-radius: 30%;
+}
+
+.Huge {
+  padding:35px;
+  font-size: 53px;
+  margin: 10px auto;
+}
+
+.Remove{
+  padding:3px;
+  margin:auto 0px;
+  margin-left: 4px;
+  border-radius: 0;
+  font-size: 14px;
+  background-color: salmon;
+  border-radius: 30%;
+  height: 100%;
+}
+
